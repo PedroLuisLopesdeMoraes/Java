@@ -6,25 +6,33 @@ public class Calculadora {
     private double n2;
     private double result;
 
-    public double soma (){
-        return (n1+n2);
+    public double soma (double n1, double n2){
+        result = n1 + n2;
+        System.out.println("O resultado da soma é: "+ result);
+        return result;
     }
-    public double sub (){
-        return (n1-n2);
+    public double sub (double n1, double n2){
+        result = n1 - n2;
+        System.out.println("O resultado da subtração é: "+result);
+        return result;
     }
-    public double mult (){
-        return (n1*n2);
+    public double mult (double n1, double n2){
+        result = n1 * n2;
+        System.out.println("O resultado da multiplicação é: "+result);
+        return result;
     }
-    public double div (){
+    public double div (double n1, double n2){
         if (n2 == 0){
             System.out.println("Número inválido !! Digite novamente");
         } else{
             result = (n1/n2);
+            System.out.println("O resultado da divisão é: "+result);
         }
         return result;
     }
-    public  double pot (){
-        return Math.pow(n1,n2);
+    public  double pot (double n1, double n2){
+        result = Math.pow(n1,n2);
+        System.out.println(result);
+        return result;
     }
-
 }
