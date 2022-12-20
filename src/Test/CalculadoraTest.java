@@ -12,8 +12,6 @@ public class CalculadoraTest {
         Calculadora c = new Calculadora();
         Scanner num = new Scanner(System.in);
 
-        boolean sair = false;
-
             System.out.println("Escolha a operação (+ - / * ^ ): ");
             String op = num.nextLine();
             System.out.println("Digite um número: ");
