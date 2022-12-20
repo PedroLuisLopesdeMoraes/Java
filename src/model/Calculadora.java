@@ -15,5 +15,10 @@ public class Calculadora {
     public double mult (){
         return (n1*n2);
     }
+    public double div (){
+        if (n2 == 0){
+            
+        }
+    }
 
 }
