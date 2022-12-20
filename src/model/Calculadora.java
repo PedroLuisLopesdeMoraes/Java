@@ -32,7 +32,7 @@ public class Calculadora {
     }
     public  double pot (double n1, double n2){
         result = Math.pow(n1,n2);
-        System.out.println(result);
+        System.out.println("O resultado da potenciação é: " + result);
         return result;
     }
 }
