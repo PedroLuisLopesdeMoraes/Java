@@ -3,6 +3,7 @@ package Test;
 import model.Calculadora;
 
 import java.util.Objects;
+import java.util.Random;
 import java.util.Scanner;
 
 public class CalculadoraTest {
@@ -11,11 +12,10 @@ public class CalculadoraTest {
         Calculadora c = new Calculadora();
         Scanner num = new Scanner(System.in);
 
-        String op = null;
+        boolean sair = false;
 
-        while (!Objects.equals(op, "@")) {
             System.out.println("Escolha a operação (+ - / * ^ ): ");
-            op = num.nextLine();
+            String op = num.nextLine();
             System.out.println("Digite um número: ");
             double n1 = num.nextDouble();
             System.out.println("Digite outro número: ");
@@ -30,6 +30,6 @@ public class CalculadoraTest {
             }
             System.out.println("------------");
 
+
         }
     }
-}
